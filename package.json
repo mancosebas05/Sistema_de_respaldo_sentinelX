@@ -1,0 +1,26 @@
+{
+  "name": "sentinelx",
+  "version": "1.0.0",
+  "description": "SentinelX - Sistema de Respaldo Automatizado y Centralizado para PyMEs",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && node config/seed.js",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "start": "npm run backend & npm run frontend"
+  },
+  "author": "Manco Villa Sebastián, Celeita Cáceres Andrés Felipe, Carmona Sánchez Andrés",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/sentinelx"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "mongodb": "^7.1.1"
+  }
+}
